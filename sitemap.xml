@@ -46,11 +46,6 @@
   </url>
   
   <url>
-    <loc>https://ipfs.io/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ipfs.io/docs/install/</loc>
   </url>
   
@@ -70,6 +65,11 @@
   
   <url>
     <loc>https://ipfs.io/media/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ipfs.io/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
