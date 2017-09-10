@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="../../css/main.css" />
+<link rel="icon" type="image/png" href="../../images/favicon.png">
+
+<title>Install IPFS | IPFS Docs</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="Protocol Labs" />
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="Install IPFS | IPFS Docs" />
+<meta property="og:site_name" content="IPFS" />
+<meta property="og:url" content="https://ipfs.io/docs/install/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ipfs.ioimages/ipfs-logo.svg" />
+<meta property="og:image:type" content="image/svg+xml" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="IPFS" />
+<meta name="twitter:title" content="Install IPFS | IPFS Docs" />
+<meta name="twitter:creator" content="Protocol Labs" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="ipfs.io" />
+<meta name="twitter:image:src" content="https://ipfs.ioimages/ipfs-logo.svg" />
+<link href="../../blog/index.xml" rel="alternate feed" type="application/rss+xml" title="IPFS is the Distributed Web" />
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-52930282-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+<script src="../../js/blackout.js" async></script>
+
+</head>
+
+<body>
+  <header class="header-has-logo">
+  <div class="container cf">
+    <h1 class="pull-left">
+      <a href="../../" class="logo ipfs-logo transition transition-fadeout">IPFS</a>
+    </h1>
+    <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+      <input id="menu-toggle" type="checkbox" class="menu-toggle">
+      <label for="menu-toggle">Menu</label>
+      <ul class="list-unstyled list-inline cf">
+        
+          <li><a href="../../">About</a></li>
+        
+        <li><a href="../../docs/install" class="current-item">Install</a></li>
+        <li><a href="../../media" >Media</a></li>
+        <li><a href="../../docs" >Docs</a></li>
+        <li><a href="../../blog" >Blog</a></li>
+      </ul>
+    </nav>
+    
+      <div class="hero hero-subdoc">
+        
+      </div>
+    
+  </div>
+  <div class="view-more">
+    <label>View more</label><a href="#"></a>
+  </div>
+  
+</header>
+
+
+  <div class="container">  
+    <section id="content" class="body blog">
+      <ul class="docs-menu">
+        <li><a href="../../docs" >Documentation</a></li>
+        <li><a href="../../docs/install" class="current-item">Install</a></li>
+        <li><a href="../../docs/getting-started" >Getting Started</a></li>
+        <li><a href="../../docs/api" >API</a></li>
+        <li><a href="../../docs/commands" >Commands</a></li>
+        <li><a href="../../docs/examples" >Examples</a></li>
+      </ul>
+      <div class="content-wrapper">
+        
+
+<h1 id="install-go-ipfs">Install Go IPFS</h1>
+
+<p>We recommend installing IPFS from a prebuilt package:</p>
+
+<p><center><a class="button button-primary" href="https://dist.ipfs.io/#go-ipfs" role="button">
+  Download IPFS for your platform &nbsp;&nbsp;<i class="fa fa-download" aria-hidden="true"></i>
+</a></center></p>
+
+<h2 id="index">Index</h2>
+
+<ul>
+<li><a href="#installing-from-a-prebuilt-package">Installing from a Prebuilt Package</a></li>
+<li><a href="#installing-with-ipfs-update">Installing with ipfs-update</a></li>
+<li><a href="#building-from-source">Building from source</a></li>
+<li><a href="#upgrading-ipfs">Upgrading IPFS</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+
+<hr />
+
+<h2 id="installing-from-a-prebuilt-package">Installing from a Prebuilt Package</h2>
+
+<h3 id="mac-os-x-and-linux">Mac OS X and Linux</h3>
+
+<p>After downloading, untar the archive, and move the <code>ipfs</code> binary somewhere in your executables <code>$PATH</code>:</p>
+
+<pre><code class="language-sh">tar xvfz go-ipfs.tar.gz
+mv go-ipfs/ipfs /usr/local/bin/ipfs
+</code></pre>
+
+<p>Test it out:</p>
+
+<pre><code class="language-sh">&gt; ipfs help
+USAGE:
+
+    ipfs - Global p2p merkle-dag filesystem.
+...
+</code></pre>
+
+<p>Congratulations! You now have a working IPFS installation on your computer.</p>
+
+<p><a class="button button-primary" href="../getting-started" role="button">
+  Getting Started with IPFS &nbsp;&nbsp;<i class="fa fa-arrow-right"></i>
+</a></p>
+
+<h3 id="windows">Windows</h3>
+
+<p>After downloading, unzip the archive, and move <code>ipfs.exe</code>  somewhere in your <code>%PATH%</code>.</p>
+
+<p>Test it out:</p>
+
+<pre><code class="language-sh">&gt; ipfs help
+USAGE:
+
+    ipfs - Global p2p merkle-dag filesystem.
+...
+</code></pre>
+
+<p>Congratulations! You now have a working IPFS installation on your computer.</p>
+
+<p><a class="button button-primary" href="../getting-started" role="button">
+  Getting Started with IPFS &nbsp;&nbsp;<i class="fa fa-arrow-right"></i>
+</a></p>
+
+<hr />
+
+<h2 id="installing-with-ipfs-update">Installing with ipfs-update</h2>
+
+<p><code>ipfs-update</code> is a command-line tool to install and upgrade the <code>ipfs</code> binary.</p>
+
+<h3 id="getting-ipfs-update">Getting ipfs-update</h3>
+
+<p><code>ipfs-update</code> can be downloaded for your platform at: <a href="https://dist.ipfs.io/#ipfs-update">https://dist.ipfs.io/#ipfs-update</a></p>
+
+<p>If you have a working Go environment (&gt;=1.8), you can also install it with: <code>go get -u github.com/ipfs/ipfs-update</code>.</p>
+
+<p>When installing new versions of <code>ipfs</code> or upgrading make sure you are using the latest version of <code>ipfs-update</code>.</p>
+
+<h3 id="installing-ipfs-with-ipfs-update">Installing ipfs with ipfs-update</h3>
+
+<p><code>ipfs-update versions</code> lists all the available <code>ipfs</code> versions which are available for download:</p>
+
+<pre><code>$ ipfs-update-versions
+v0.3.2
+v0.3.4
+v0.3.5
+v0.3.6
+v0.3.7
+v0.3.8
+v0.3.9
+v0.3.10
+v0.3.11
+v0.4.0
+v0.4.1
+v0.4.2
+v0.4.3
+v0.4.4
+v0.4.5
+v0.4.6
+v0.4.7-rc1
+</code></pre>
+
+<p><code>ipfs-update install latest</code> will install the latest available version:</p>
+
+<pre><code>$ ipfs-update install latest
+fetching go-ipfs version v0.4.7-rc1
+binary downloaded, verifying...
+success!
+stashing old binary
+installing new binary to /home/hector/go/bin/ipfs
+checking if repo migration is needed...
+Installation complete!
+</code></pre>
+
+<p>Note that the latest available version may not be stable (i.e. release candidates
+in the form <code>vX.X.X-rcX</code>). So it is recommended to specify the version you want
+to install, for example: <code>ipfs-update install v0.4.6</code>.</p>
+
+<hr />
+
+<h2 id="building-from-source">Building from Source</h2>
+
+<div class="message mb">
+  <strong>Warning:</strong> In the past you could install IPFS using <code>go get</code>. This
+  does not work anymore!
+</div>
+
+<p>If you want, you can also build IPFS from source.
+If you are on Mac OS X or Linux take a look at <a href="https://github.com/ipfs/go-ipfs#build-from-source">the readme</a> for install instructions.
+If you are on Windows take a look at <a href="https://github.com/ipfs/go-ipfs/blob/master/docs/windows.md">this document</a> for instructions.</p>
+
+<hr />
+
+<h2 id="upgrading-ipfs">Upgrading IPFS</h2>
+
+<p><code>ipfs</code> upgrades (and downgrades) may involve a repository upgrade process performed by the
+<a href="https://dist.ipfs.io/#fs-repo-migrations">fs-repo-migrations</a> tool.</p>
+
+<h3 id="upgrading-using-ipfs-update">Upgrading using ipfs-update</h3>
+
+<p><code>ipfs-update install</code> will download and run <code>fs-repo-migrations</code> when needed, during the installation of
+a newer or older <code>ipfs</code> version (as explained above). This is the easiest way of upgrading.</p>
+
+<div class="message mb">
+  <strong>Warning:</strong> Make sure that the ipfs daemon is not running during an upgrade
+</div>
+
+<h3 id="upgrading-manually">Upgrading manually</h3>
+
+<p>In order to perform a manual upgrade of <code>ipfs</code>, you will need to manually run any repository migrations. The
+procedure is as follows:</p>
+
+<ul>
+<li>Stop the <code>ipfs</code> daemon if it is running</li>
+<li>Optionally backup your <code>ipfs</code> data folder (i.e. <code>cp -aL ~/.ipfs ~/.ipfs.bk</code>)</li>
+<li>Download and install the latest version of <code>ipfs</code> from <a href="https://dist.ipfs.io/#go-ipfs">https://dist.ipfs.io/#go-ipfs</a></li>
+<li>Run <code>ipfs daemon</code>.</li>
+</ul>
+
+<p>When a repository migration is necessary, <code>ipfs</code> will inform the user, download and install <code>fs-repo-migrations</code>
+and perform the upgrade. If you wish the procedure to happen unattended, launch the daemon with the <code>--migrate</code>
+flag.</p>
+
+<p>Migrations can be also run manually by downloading the latest version of <code>fs-repo-migrations</code>
+from <a href="https://dist.ipfs.io/#fs-repo-migrations">https://dist.ipfs.io/#fs-repo-migrations</a> and
+<a href="https://github.com/ipfs/fs-repo-migrations/blob/master/run.md">following these instructions</a>.</p>
+
+<hr />
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<h3 id="help">Help!</h3>
+
+<p>If you have any problems, come get live help at
+<a href="../#community">#ipfs</a> or via <a href="../#community">the mailing list</a>.</p>
+
+<h3 id="check-go-version">Check Go Version</h3>
+
+<p>IPFS works with Go 1.7.0 or later.
+To check what go version you have installed, type <code>go version</code>.
+Here&rsquo;s what I get:</p>
+
+<pre><code class="language-sh">&gt; go version
+go version go1.7 linux/amd64
+</code></pre>
+
+<p>If you need to update, it is recommended to install from the
+<a href="https://golang.org/doc/install/">canonical Go packages</a>.
+Package managers often contain out-of-date Go packages.</p>
+
+<h3 id="install-fuse">Install FUSE</h3>
+
+<p>For more details on setting up FUSE (so that you can mount the filesystem), see <a href="https://github.com/ipfs/go-ipfs/blob/master/docs/fuse.md">github.com/ipfs/go-ipfs/blob/master/docs/fuse.md</a></p>
+
+      </div>
+      
+    </section>
+
+    <div class="content-wrapper">
+        <section id="latest">
+  <h2 class="content-center mb2">The Latest</h2>
+  <div class="grid-flex-container">
+    <div class="grid-flex-cell">
+      <h5>IPFS Starlog</h5>
+      <ol class="latest-list list-unstyled" id="latest-list">
+        
+        
+      </ol>
+    </div>
+    <div class="grid-flex-cell">
+      <h5>Coverage</h5>
+      <ol class="latest-list list-unstyled">
+        <li><span class="publication">TechCrunch</span> <a href="http://techcrunch.com/2015/10/04/why-the-internet-needs-ipfs-before-its-too-late/">Why The Internet Needs IPFS Before It’s Too Late</a></li>
+        <li><span class="publication">Motherboard</span> <a href="http://motherboard.vice.com/read/the-interplanetary-file-system-wants-to-create-a-permanent-web">IPFS Wants to Create a Permanent Web</a></li>
+        <li><span class="publication">MakeUseOf</span> <a href="http://www.makeuseof.com/tag/goodbye-http-faster-safer-decentralized-internet-ipfs/">Faster, Safer, Decentralized Internet With IPFS</a></li>
+      </ol>
+    </div>
+    <div class="grid-flex-cell grid-flex-cell-1of2">
+      <h5>Videos</h5>
+      <ul class="latest-videos list-unstyled cf">
+        <li id="modal-nofooter">
+          <a class="popup-youtube video-thumb" href="https://www.youtube.com/watch?v=8CMxDNuuAiQ">
+            <img src="../../images/video-still-demo.png" />
+          </a>
+          <a class="popup-youtube" href="https://www.youtube.com/watch?v=8CMxDNuuAiQ">IPFS Demo</a>
+        </li>
+        <li>
+          <a class="popup-youtube video-thumb" href="https://www.youtube.com/watch?v=HUVmypx9HGI">
+            <img src="../../images/video-still-stanford-seminar.png" />
+          </a>
+          <a class="popup-youtube" href="https://www.youtube.com/watch?v=HUVmypx9HGI">The Distributed, Permanent Web</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <h4 class="content-center">Keep up with IPFS by <a href="https://tinyletter.com/ipfsnewsletter">joining our newsletter »</a></h4>
+</section>
+
+    </div>
+      
+  </div>
+
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      <div class="sitemap-menu grid-flex-container">
+        <div class="grid-flex-cell">
+          <ul class="sitemap unstyled">
+            <li class="sitemap-head">Protocol Labs</li>
+            <li><a href="https://protocol.ai">About</a></li>
+            <li><a href="https://protocol.ai/join">Join</a></li>
+          </ul>
+        </div>
+        <div class="grid-flex-cell">
+          <ul class="sitemap unstyled">
+            <li class="sitemap-head">IPFS</li>
+            <li><a href="//github.com/ipfs/ipfs">About</a></li>
+            <li><a href="../../docs/install/">Install</a></li>
+            <li><a href="../../media">Media</a></li>
+            <li><a href="../../docs/">Docs</a></li>
+            <li><a href="../../docs/">Code</a></li>
+            <li><a href="../../docs/#community">Community</a></li>
+            <li><a href="../../blog/">Blog</a></li>
+            <li><a href="../../legal/">Legal</a></li>
+          </ul>
+        </div>
+        <div class="grid-flex-cell">
+          <ul class="sitemap unstyled">
+            <li class="sitemap-head">Filecoin</li>
+            <li><a href="http://filecoin.io/">About</a></li>
+            <li><a href="http://filecoin.io/filecoin.pdf">Paper</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="share-links">
+        <ul class="share unstyled">
+          
+            <li><a class="Twitter" href="http://twitter.com/ipfsbot">Twitter</a></li>
+          
+            <li><a class="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://ipfs.io">Facebook</a></li>
+          
+            <li><a class="Google" href="https://plus.google.com/108638684245894749879">Google</a></li>
+          
+            <li><a class="YouTube" href="https://www.youtube.com/channel/UCdjsUXJ3QawK4O5L1kqqsew">YouTube</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Protocol Labs | Except as <a href="https://protocol.ai/legal/">noted</a>, content licensed <a href="https://creativecommons.org/licenses/by/3.0/">CC-BY 3.0.</a></p>
+  </div>
+</footer>
+
+  <script src="../../js/common.js"></script>  
+  <script src="../../js/header-and-latest.js"></script>  
+</body>
+
+</html>
